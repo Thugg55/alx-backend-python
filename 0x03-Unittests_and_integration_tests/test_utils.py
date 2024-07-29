@@ -23,7 +23,7 @@ class TestAccessNestedMap(unittest.TestCase):
         """implement the defined unction"""
         self.assertEqual(access_nested_map(nested_map, path), expected)
 
-     @parameterized.expand([
+    @parameterized.expand([
         ({}, ("a",), 'a'),
         ({"a": 1}, ("a", "b"), 'b')
     ])
